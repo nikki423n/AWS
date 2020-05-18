@@ -59,7 +59,6 @@ public class MoviesItemOpsUpdate {
             .withValueMap(new ValueMap().withNumber(":r", 5.5).withString(":p", "Everything happens all at once.")
                 .withList(":a", Arrays.asList("Larry", "Moe", "Curly")))
             .withReturnValues(ReturnValue.UPDATED_NEW);
-
         try {
             System.out.println("Updating the item...");
             UpdateItemOutcome outcome = table.updateItem(updateItemSpec);
